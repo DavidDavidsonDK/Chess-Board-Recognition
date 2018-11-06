@@ -3,6 +3,7 @@ Recognize Chess Board
 
 ## TODO LIST 1
 
+- [X] Create Git represotory and init files
 - [ ] Find board
 - [ ] Split board
 - [ ] Preprocess data
