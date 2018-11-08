@@ -5,8 +5,8 @@ Recognize Chess Board
 
 - [X] Create Git represotory and init files
 - [X] Download Data from DropBox
-- [ ] Find board
-- [ ] Split board
+- [X] Find board
+- [X] Split board
 - [ ] Preprocess data
 - [ ] Load Pretraind models(e.g,VGG)
 - [ ] Train on new data
