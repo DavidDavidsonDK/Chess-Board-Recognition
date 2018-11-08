@@ -4,6 +4,7 @@ Recognize Chess Board
 ## TODO LIST 1
 
 - [X] Create Git represotory and init files
+- [X] Download Data from DropBox
 - [ ] Find board
 - [ ] Split board
 - [ ] Preprocess data
