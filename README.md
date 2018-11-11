@@ -5,10 +5,10 @@ Recognize Chess Board
 
 - [X] Create Git represotory and init files
 - [X] Download Data from DropBox
-- [ ] Find board
-- [ ] Split board
+- [X] Find board
+- [X] Split board
 - [ ] Preprocess data
-- [ ] Load Pretraind models(e.g,VGG)
+- [X] Load Pretraind models(e.g,VGG) and add new layers from top
 - [ ] Train on new data
 - [ ] Evaluate
 - [ ] Save Final model
