@@ -24,7 +24,7 @@ def download_data(url):
 
 
 	os.remove(path+'chess_data.zip')
-	os.mkdir(path + 'Chess ID Public Data/output_train/empty')
+	os.mkdir(path + 'Chess ID Public Data/output_test/empty')
 
 if __name__ == '__main__':
 	url = "https://www.dropbox.com/s/8gj7yzu4n3oqm81/Chess%20ID%20Public%20Data.zip?dl=1" 
