@@ -7,7 +7,8 @@ Recognize Chess Board
 - [X] Download Data from DropBox
 - [X] Find board
 - [X] Split board
-- [ ] Preprocess data,Load Pretraind models(e.g,VGG) and add new layers from top
+- [ ] Preprocess data
+- [X] Load Pretraind models(e.g,VGG) and add new layers from top
 - [ ] Train on new data
 - [ ] Evaluate
 - [ ] Save Final model
