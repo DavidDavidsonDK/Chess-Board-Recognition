@@ -34,7 +34,7 @@ class VGG_Network(Model):
 		X = Dropout(dropout)(X)
 		y = Dense(output_classes, activation='softmax')(X)
 		outputs = [y]
-		super(Network, self).__init__(inputs=inputs, outputs=outputs)
+		super(VGG_Network, self).__init__(inputs=inputs, outputs=outputs)
 
 	def say_name(self):
 		pass
