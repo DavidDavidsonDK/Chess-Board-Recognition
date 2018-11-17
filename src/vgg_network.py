@@ -10,7 +10,7 @@ class VGG_Network(Model):
 	def __init__(self,
 				 input_dim, 
 				 output_classes,
-				 last_freez_layers = -4,
+				 last_freez_layers = None,
 				 dropout = 0.5):
 
 		self.dim = input_dim
@@ -22,15 +22,16 @@ class VGG_Network(Model):
 
 		print('Download_vgg')
 		vgg_conv = VGG16(weights='imagenet',include_top=False,input_shape=input_dim)
-		print('Pop last two dense layers')
 
 		print('Freeze first layers')
+		if last_freez_layers is None:
+			last_freez_layers = len(vgg_conv.layers)
 		for layer in vgg_conv.layers[:last_freez_layers]:
 			layer.trainable = False
 
 		X = vgg_conv(X)
 		X = Flatten()(X)
-		X = Dense(512, activation='relu')(X)
+		X = Dense(1024, activation='relu')(X)
 		X = Dropout(dropout)(X)
 		y = Dense(output_classes, activation='softmax')(X)
 		outputs = [y]
