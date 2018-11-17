@@ -11,6 +11,7 @@ class VGG_Network(Model):
 				 input_dim, 
 				 output_classes,
 				 last_freez_layers = None,
+				 top_dense_units = 512,
 				 dropout = 0.5):
 
 		self.dim = input_dim
@@ -31,7 +32,7 @@ class VGG_Network(Model):
 
 		X = vgg_conv(X)
 		X = Flatten()(X)
-		X = Dense(1024, activation='relu')(X)
+		X = Dense(top_dense_units, activation='relu')(X)
 		X = Dropout(dropout)(X)
 		y = Dense(output_classes, activation='softmax')(X)
 		outputs = [y]
