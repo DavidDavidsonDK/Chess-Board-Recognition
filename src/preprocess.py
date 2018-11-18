@@ -2,6 +2,7 @@ import os
 import numpy as np
 import cv2
 import pickle
+from keras.applications.vgg16 import preprocess_input
 
 #train_path = '../data/raw/Chess ID Public Data/output_train/'
 #test_path = '../data/raw/Chess ID Public Data/output_test/'
@@ -25,6 +26,8 @@ def create_data(path_of_images, img_shape = (227,227,3),train=True):
                 data[i,:] = img_arr[:]
                 labels[i] = label_to_index_map[d]
                 i+=1
+    data = data.reshape(data.shape[0], *img_shape)
+    data = preprocess_input(data,mode='tf')
     print("Save image arrays to 'data/processed ...'")
     if train:
         with open('../data/processed/train_x.npy','wb') as file:
