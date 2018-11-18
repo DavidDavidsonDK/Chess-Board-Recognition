@@ -27,7 +27,7 @@ def create_data(path_of_images, img_shape = (227,227,3),train=True):
                 labels[i] = label_to_index_map[d]
                 i+=1
     data = data.reshape(data.shape[0], *img_shape)
-    data = preprocess_input(data,mode='tf')
+    #data = preprocess_input(data,mode='tf')
     print("Save image arrays to 'data/processed ...'")
     if train:
         with open('../data/processed/train_x.npy','wb') as file:
