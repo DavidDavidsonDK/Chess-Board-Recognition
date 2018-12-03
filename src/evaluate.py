@@ -39,7 +39,7 @@ def plot_confusion_matrix(cm, classes,save_path,
     plt.xlabel('Predicted label')
     plt.tight_layout()
 
-    plt.figure()
-    plt.savefig(save_path)
+    fig1 = plt.gcf()
     if verbose:
       plt.show()
+    fig1.savefig(save_path,dpi=150)
