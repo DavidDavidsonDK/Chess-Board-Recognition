@@ -11,7 +11,7 @@ import keras
 
 if __name__ == '__main__':
 	print('create test and dev data')
-	os.chdir('./Chess-Board-Recognition/src')
+	#os.chdir('./Chess-Board-Recognition/src')
 
 	train_path = '../data/raw/Chess ID Public Data/output_train/'
 	test_path = '../data/raw/Chess ID Public Data/output_test/'
