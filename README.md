@@ -1,7 +1,7 @@
 # Chess-Board-Recognition
 Recognize Chess Board 
 
-## TODO LIST 1
+## TODO LIST 1 Chess-Board-Recognition
 
 - [X] Create Git represotory and init files
 - [X] Download Data from DropBox
@@ -16,7 +16,11 @@ Recognize Chess Board
 - [ ] add docs
 - [ ] add comments
 
-### TODO LIST 2
+### TODO LIST 2 Classify state
 
-- [ ] Classify state
+- [ ] Preprocess data/ sparse vs categorical represantation
+- [ ] Create baseline model
+- [ ] Visualising model
+
+
 
